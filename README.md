@@ -2,7 +2,7 @@
 
 **GESTUREVOICE-CONTROLLER** is a futuristic, hands-free interface that lets you control your Windows computer using AI. It replaces your physical mouse and keyboard with **Hand Gestures** and **Voice Commands**.
 
-It uses **Computer Vision** (to track your fingers) and **Speech Recognition** (to listen to commands) in real-time.
+It uses **Computer Vision** (to track your fingers) and **Natural language processing** (to listen to commands) in real-time.
 
 ---
 
@@ -48,21 +48,19 @@ pyaudio
 
 ## 👨‍💻 About the Developer
 
-*AI & Deep Learning Engineer | Computer Vision Researcher*
+*AI & ML Engineer*
 
 
 
-iam parameshwar d passionate about bridging the gap between humans and machines through **Artificial Intelligence** and **Human-Computer Interaction (HCI)**. iam specializes in building real-time Deep Learning models and Computer Vision systems that solve practical problems.
+iam parameshwar d passionate about bridging the gap between humans and machines through **Artificial Intelligence** and **Human-Computer Interaction (HCI)**. iam specializes in building real-time Deep Learning models and natural language processing that solve practical problems.
 
 
-This project, **ESTUREVOICE-CONTROLLER**, demonstrates my expertise in:
+This project, **GESTUREVOICE-CONTROLLER**, demonstrates my expertise in:
 
 * **Computer Vision:** Real-time hand tracking and landmark detection.
-
+* **NLP** Speech-to-Text (STT): Converts the acoustic signals into written words.
 * **Multimodal AI:** Integrating voice and gesture inputs seamlessly.
-
 * **System Optimization:** creating zero-lag, efficient Python automation.
-
 
 
 # Connect with Me
@@ -70,5 +68,6 @@ This project, **ESTUREVOICE-CONTROLLER**, demonstrates my expertise in:
 * GitHub:** [github.com/parameshAI](https://github.com/parameshAI)
 
 * Email:** (parameshwardp8@gmail.com)
+
 
 *Built with Python, OpenCV, and MediaPipe
