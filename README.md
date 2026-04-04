@@ -22,7 +22,7 @@ It combines **Computer Vision** (MediaPipe + OpenCV) for zero-lag hand tracking 
 
 
 
-![camera](https://github.com/user-attachments/assets/camera_gesturemp4)
+![camera](https://github.com/parameshAI/Gesture-voice-controller/raw/main/camera%20gesture.mp4)
 
 
 
@@ -32,7 +32,7 @@ Real-time hand tracking using MediaPipe — move cursor, click, drag, control vo
 
 
 
-![Voice](https://github.com/user-attachments/assets/voicemp4)
+![Voice](https://github.com/parameshAI/Gesture-voice-controller/raw/main/voice.mp4)
 
 
 
