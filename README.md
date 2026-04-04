@@ -67,48 +67,55 @@ https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
 
 ## Installation
 
-
-
 **Step 1 — Clone the repository**
 
-```bash
-git clone https://github.com/parameshAI/GestureVoice-Controller
-cd GestureVoice-Controller
-Step 2 — Install dependencies
-pip install opencv-python mediapipe pyautogui SpeechRecognition pyttsx3 pyaudio
-Step 3 — Run the application
-python gesture_voice_controller.py
-How to Use
-Gesture Control
-Place your right hand in front of the webcam to move the cursor
-Pinch index finger and thumb to click
-Hold pinch for more than 0.4 seconds to drag
-Use your left hand for volume and right click
-Voice Control
-Press the S key to activate the microphone
-Speak clearly: Open Chrome, Open Notepad
-The AI will confirm and execute the command
-How It Works
-Webcam Feed
+    git clone https://github.com/parameshAI/GestureVoice-Controller
+    cd GestureVoice-Controller
+
+**Step 2 — Install dependencies**
+
+    pip install opencv-python mediapipe pyautogui SpeechRecognition pyttsx3 pyaudio
+
+**Step 3 — Run the application**
+
+    python gesture_voice_controller.py
+## How to Use
+
+**Gesture Control**
+
+- Place your right hand in front of the webcam to move the cursor
+- Pinch index finger and thumb to click
+- Hold pinch for more than 0.4 seconds to drag
+- Use your left hand
+**Voice Control**
+
+- Press the S key to activate the microphone
+- Speak clearly: Open Chrome, Open Notepad
+- The AI will confirm and execute the command
+## How It Works
+
+    Webcam Feed
     ↓
-MediaPipe Hand Landmark Detection (21 points per hand)
+    MediaPipe Hand Landmark Detection
     ↓
-Gesture Logic (pinch distance, finger positions)
+    Gesture Logic
     ↓
-PyAutoGUI executes mouse or keyboard action
+    PyAutoGUI executes action
     ↓
-SpeechRecognition triggered by S key
+    SpeechRecognition triggered by S key
     ↓
-Google Speech API transcribes voice
+    Google Speech API transcribes voice
     ↓
-Command parsed and executed via PyAutoGUI
-Future Improvements
-Scroll gesture support
-Custom voice command mapping
-Multi-language voice support
-Linux and macOS compatibility
-GUI settings panel
-Author
+    Command executed via PyAutoGUI
+## Future Improvements
+
+- Scroll gesture support
+- Custom voice command mapping
+- Multi-language voice support
+- Linux and macOS compatibility
+- GUI settings panel
+
+## Author
 Parameshwar D.
 B.Sc Artificial Intelligence and Machine Learning
 St. Joseph's College (Autonomous), Tiruchirappalli
