@@ -79,8 +79,10 @@ https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
 **Step 3 — Run the application**
 
     python gesture_voice_controller.py
-## How to Use
 
+---
+
+## How to Use
 **Gesture Control**
 
 - Place your right hand in front of the webcam to move the cursor
@@ -92,6 +94,9 @@ https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
 - Press the S key to activate the microphone
 - Speak clearly: Open Chrome, Open Notepad
 - The AI will confirm and execute the command
+
+---
+
 ## How It Works
 
     Webcam Feed
@@ -107,6 +112,9 @@ https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
     Google Speech API transcribes voice
     ↓
     Command executed via PyAutoGUI
+
+---
+
 ## Future Improvements
 
 - Scroll gesture support
@@ -115,8 +123,11 @@ https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
 - Linux and macOS compatibility
 - GUI settings panel
 
+---
+
 ## Author
 Parameshwar D.
 B.Sc Artificial Intelligence and Machine Learning
 St. Joseph's College (Autonomous), Tiruchirappalli
+
 GitHub: https://github.com/parameshAI
