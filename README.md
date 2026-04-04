@@ -22,21 +22,17 @@ It combines **Computer Vision** (MediaPipe + OpenCV) for zero-lag hand tracking 
 
 
 
-![camera](camera_gesture.mp4)
+
+### Gesture Control Demo
+<video src="camera_gesture.mp4" width="100%" controls></video>
+*Using MediaPipe to control the mouse, click, and drag with zero latency.*
+
+### Voice Control Demo
+<video src="voice.mp4" width="100%" controls></video>
+*Using SpeechRecognition to open applications and control the system via voice.*
 
 
 
-Real-time hand tracking using MediaPipe — move cursor, click, drag, control volume, and right-click using hand gestures.
-
-### Voice Control
-
-
-
-![Voice](voice.mp4)
-
-
-
-Voice command automation using SpeechRecognition — open applications and control the system hands-free.
 
 ---
 
