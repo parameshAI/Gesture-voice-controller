@@ -25,11 +25,11 @@ It combines **Computer Vision** (MediaPipe + OpenCV) for zero-lag hand tracking 
 
 
 ### Gesture Control Demo
-<video src="https://github.com/parameshAI/YourRepoName/raw/main/camera_gesture.mp4" width="100%" controls></video>
+<video src="https://github.com/parameshAI/Gesture-voice-controller/raw/main/camera_gesture.mp4" width="100%" controls></video>
 *Using MediaPipe to control the mouse, click, and drag with zero latency.*
 
 ### Voice Control Demo
-<video src="https://github.com/parameshAI/YourRepoName/raw/main/voice.mp4" width="100%" controls></video>
+<video src="https://github.com/parameshAI/Gesture-voice-controller/raw/main/voice.mp4" width="100%" controls></video>
 *Using SpeechRecognition to open applications and control the system via voice.*
 
 
