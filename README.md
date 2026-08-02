@@ -1,40 +1,33 @@
-# GestureVoice Controller
+<h1 align="center">🖐️ GestureVoice Controller</h1>
 
-> A hands-free Human-Computer Interaction (HCI) system that replaces the physical mouse and keyboard using real-time Hand Gesture Recognition and Voice Command Automation.
-> 
-GESTUREVOICE-CONTROLLER is a futuristic, hands-free interface that lets you control your Windows computer using AI. It replaces your physical mouse and keyboard with *Hand Gestures* and *Voice Commands*.
+<p align="center">
+  <b>A hands-free Human-Computer Interaction (HCI) system that replaces the physical mouse and keyboard with real-time hand gesture recognition and voice command automation.</b>
+</p>
 
-It uses *Computer Vision* (to track your fingers) and *Natural Language Processing* (to listen to commands) in real-time.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/MediaPipe-Hand%20Tracking-00897B" />
+  <img src="https://img.shields.io/badge/SpeechRecognition-Voice%20Control-orange" />
+  <img src="https://img.shields.io/badge/Platform-Windows-blue?logo=windows" />
+</p>
 
 ---
 
 ## Overview
 
-GestureVoice Controller is a multimodal AI application built for Windows that bridges the gap between human intent and computer action — using only a webcam and a microphone.
+GestureVoice Controller is a multimodal AI application that bridges human intent and computer action using nothing but a webcam and a microphone — no extra hardware required.
 
-It combines **Computer Vision** (MediaPipe + OpenCV) for zero-lag hand tracking and **Natural Language Processing** (SpeechRecognition) for voice-driven automation — with no additional hardware required.
-
----
+It combines **Computer Vision** (MediaPipe + OpenCV) for zero-lag hand tracking with **Natural Language Processing** (SpeechRecognition) for voice-driven automation, running fully in real time.
 
 ## Demo
 
-### Gesture Control
+| Gesture Control | Voice Control |
+|---|---|
+| [![Gesture Control Demo](https://img.youtube.com/vi/R7kq_zB7lVY/hqdefault.jpg)](https://youtube.com/shorts/R7kq_zB7lVY?si=DtIrsv_yobOAdZ1M) | [![Voice Control Demo](https://img.youtube.com/vi/mRodbF2DyU4/hqdefault.jpg)](https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j) |
+| Zero-latency cursor move, click, and drag using MediaPipe hand tracking | Opening apps and controlling the system with voice commands |
 
-
-
-
-
-### Gesture Control Demo
-https://youtube.com/shorts/R7kq_zB7lVY?si=DtIrsv_yobOAdZ1M
-*Using MediaPipe to control the mouse, click, and drag with zero latency.*
-
-### Voice Control Demo
-https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
-*Using SpeechRecognition to open applications and control the system via voice.*
-
-
-
----
+*(Click either thumbnail to watch on YouTube)*
 
 ## Features
 
@@ -46,11 +39,9 @@ https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
 | Left hand pinch | Volume down |
 | Left hand open palm | Volume up |
 | Left hand peace sign | Right click |
-| Voice: Open Chrome | Opens Chrome |
-| Voice: Open Notepad | Opens Notepad |
-| Voice: Stop or Exit | Closes the app |
-
----
+| Voice: "Open Chrome" | Opens Chrome |
+| Voice: "Open Notepad" | Opens Notepad |
+| Voice: "Stop" / "Exit" | Closes the app |
 
 ## Tech Stack
 
@@ -63,71 +54,69 @@ https://youtube.com/shorts/mRodbF2DyU4?si=QdcMCdKV-WalB33j
 | SpeechRecognition | Voice command processing |
 | pyttsx3 | Text-to-speech AI response |
 
----
-
 ## Installation
 
-**Step 1 — Clone the repository**
+**1. Clone the repository**
+```bash
+git clone https://github.com/parameshAI/GestureVoice-Controller
+cd GestureVoice-Controller
+```
 
-    git clone https://github.com/parameshAI/GestureVoice-Controller
-    cd GestureVoice-Controller
+**2. Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-**Step 2 — Install dependencies**
+**3. Run the application**
+```bash
+python main.py
+```
 
-    pip install opencv-python mediapipe pyautogui SpeechRecognition pyttsx3 pyaudio
-
-**Step 3 — Run the application**
-
-    python gesture_voice_controller.py
-
----
+> **Note:** `pyaudio` (used by `SpeechRecognition`) needs PortAudio installed on some systems. On Windows, `pip install pyaudio` usually works out of the box; on macOS/Linux you may need `brew install portaudio` or `sudo apt install portaudio19-dev` first.
 
 ## How to Use
+
 **Gesture Control**
-
 - Place your right hand in front of the webcam to move the cursor
-- Pinch index finger and thumb to click
-- Hold pinch for more than 0.4 seconds to drag
-- Use your left hand
+- Pinch index finger and thumb together to click
+- Hold the pinch for more than 0.4 seconds to click-and-drag
+- Use your left hand for volume control and right-click (see table above)
+
 **Voice Control**
-
-- Press the S key to activate the microphone
-- Speak clearly: Open Chrome, Open Notepad
-- The AI will confirm and execute the command
-
----
+- Press the `S` key to activate the microphone
+- Speak clearly: *"Open Chrome"*, *"Open Notepad"*
+- The AI confirms and executes the command aloud
 
 ## How It Works
 
-    Webcam Feed
-    ↓
-    MediaPipe Hand Landmark Detection
-    ↓
-    Gesture Logic
-    ↓
-    PyAutoGUI executes action
-    ↓
-    SpeechRecognition triggered by S key
-    ↓
-    Google Speech API transcribes voice
-    ↓
-    Command executed via PyAutoGUI
-
----
+```
+Webcam Feed
+   ↓
+MediaPipe Hand Landmark Detection
+   ↓
+Gesture Logic (distance & position thresholds)
+   ↓
+PyAutoGUI executes the action
+   ↓
+"S" key press → SpeechRecognition triggered
+   ↓
+Google Speech API transcribes voice
+   ↓
+Command parsed and executed via PyAutoGUI
+```
 
 ## Future Improvements
 
-- Scroll gesture support
-- Custom voice command mapping
-- Multi-language voice support
-- Linux and macOS compatibility
-- GUI settings panel
-
----
+- [ ] Scroll gesture support
+- [ ] Custom, user-defined voice command mapping
+- [ ] Multi-language voice support
+- [ ] Linux and macOS compatibility
+- [ ] GUI settings panel
 
 ## Author
-Parameshwar D.
-B.Sc Artificial Intelligence and Machine Learning
-St. Joseph's College (Autonomous), Tiruchirappalli
 
-GitHub: https://github.com/parameshAI
+**Parameshwar D.**
+B.Sc. Artificial Intelligence & Machine Learning, St. Joseph's College (Autonomous), Tiruchirappalli
+
+[![GitHub](https://img.shields.io/badge/GitHub-parameshAI-181717?logo=github)](https://github.com/parameshAI)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/parameshwar-d-612b06391)
